@@ -1,0 +1,21 @@
+server:
+  port: 8888
+
+#spring:
+#  profiles:
+#    active: native
+spring:
+  cloud:
+    config:
+      server:
+          encrypt:
+            enabled: false
+          git:
+            search-paths: licensingservice,organizationservice,specialroutesservice,zuulservice
+            uri: https://github.com/escoffier/config-repo
+            username: qunfengqiu@gmail.com
+            password: 09Ef8#6*jN
+
+
+
+      #search-locations: classpath:config/,classpath:config/licensingservice
